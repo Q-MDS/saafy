@@ -19,8 +19,10 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>res/css/skeleton.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>res/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	
+    <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>res/css/skeleton.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>res/css/normalize.css"> -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>res/css/main.css">
     <!-- <link rel="stylesheet" href="<?php //echo base_url(); ?>res/css/modal_flat.css"/> -->
 	<!-- <link rel="stylesheet" href="<?php //echo base_url(); ?>res/css/litepicker.css"/> -->
@@ -40,12 +42,10 @@
 	<!-- Main content
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<div class="app_container">
-		<div style="position: fixed; top: 0; left: 0; width: 100%; height: 70px; margin-bottom: 10px; background: #ffffff80"><?php $this->load->view($topbar); ?></div>
-		<!-- <div style="flex:1; width: 100%; background-color: var(--app-secondary); border-radius: 30px; z-index: 10;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);"> -->
-			<div>
-				<?php $this->load->view($main_content); ?>
-			</div>
-		<!-- </div> -->
+		<div style="position: fixed; top: 0; left: 0; width: 100%;"><?php $this->load->view($topbar); ?></div>
+		<div>
+			<?php $this->load->view($main_content); ?>
+		</div>
 	</div>
 	<!-- END: Main content -->
 
