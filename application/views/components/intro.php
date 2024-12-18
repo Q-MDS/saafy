@@ -9,6 +9,10 @@ switch ($intro_type)
 		$title = "Uncover Our Story";
 		$sub_title = "Welcome to SAAFY, your go-to platform for convenient access to a variety of craft services. We're not just a website; we're a fresh online community celebrating skilled artisans worldwide.";
 	break;
+	case "Contact":
+		$title = "Get in touch";
+		$sub_title = "Contact us if you have any queries.";
+	break;
 }
 ?>
 <div style="background: #d4e3fe; flex: 3;">

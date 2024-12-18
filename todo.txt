@@ -1,1 +1,23 @@
 https://www.figma.com/design/SHpevZC0TN1RULVELNh2bP/Saafy?node-id=0-1&node-type=canvas&t=eFx4N2YAzrvAWwCd-0
+
+layout_main
+layout_simple
+layout_search
+
+template 1
+==========
+          
+menu bar (4-5 different types)
+
+sub-footer
+footer
+
+menu_basic
+menu_basic_user
+
+menu_search - search bar
+menu_search_basic - how it....
+menu_search_user - how it....
+
+
+

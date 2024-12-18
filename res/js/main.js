@@ -11,6 +11,7 @@ function include(file)
 }
 
 include(baseUrl + "res/js/menu.js");
+include(baseUrl + "res/js/nav.js");
 
 async function sendData(phpUrl, formData) 
 {

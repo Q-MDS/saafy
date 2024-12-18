@@ -13,10 +13,18 @@ class Home extends CI_Controller
 	public function index()
 	{
 		$data = array();
-		$data['title'] = 'Saafy: Home';
-		$data['topbar'] = 'includes/topbar';
+		$data['title'] = 'Home page';
+		$data['menu'] = 'includes/menus/basic';
+		$data['landing'] = 'home/landing';
 		$data['main_content'] = 'home/index';
+		$this->load->view('includes/template', $data);
+	}
 
+	public function test()
+	{
+		$data['menu'] = 'includes/menus/basic';
+		$data['landing'] = 'home/landing';
+		$data['main_content'] = 'home/index';
 		$this->load->view('includes/template', $data);
 	}
 }
