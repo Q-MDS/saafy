@@ -1,1 +1,5 @@
-<div class="d-flex justify-content-center align-items-center flex-grow-1" style="background: #2b2b2b; color: #fff">Footer</div>
+<div class="container">
+<div style="height: 300px; background: #2b2b2b; color: #fff">
+	Footer
+</div>
+</div>

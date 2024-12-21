@@ -50,5 +50,11 @@
 		</div>
 	</div>
 
+	<!-- <div style="width: 100%;"> -->
+		<div class="footer-container">
+			<?php $this->load->view('includes/footer'); ?>
+		</div>
+	<!-- </div> -->
+
 </body>
 </html>
