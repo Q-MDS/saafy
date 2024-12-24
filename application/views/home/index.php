@@ -34,6 +34,34 @@
 		border: 1px solid #d9d9d9;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	}
+	.pro-card .comment {
+		font-size: 24px;
+		font-weight: 600;
+		margin-top: 35px;
+	}
+	.pro-card .body {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	.pro-card .from-name {
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 40px;
+	}
+	.services-btn {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border: 1px solid #d9d9d9;
+		font-size: 2.2rem;
+		color: #635BFF;
+		border-radius: 30px;
+		border: 1px solid #635BFF; 
+	}
 </style>
 <div class="container" style="padding-top: 30px; padding-bottom: 30px; width: 100%">
 	<div class="eight-container">
@@ -71,8 +99,8 @@
 		</div>	
 	</div>
 </div>
-<div class="container" style="padding-top: 70px; padding-bottom: 70px; width: 100%">
-	<div class="two-container">
+<div class="container" style="padding-top: 70px; width: 100%;">
+	<div class="two-container" style="padding-bottom: 70px;">
 		<div class="join-card">
 			<div><img src="<?php echo base_url(); ?>res/images/join_customer.svg" alt="Search" style="display: block" /></div>
 			<div class="org-button" style="margin-top: 50px;">Join as a customer</div>
@@ -116,10 +144,50 @@
 		</div>
 	</div>
 
-	<div class="three-container" style="padding-top: 70px; padding-bottom: 70px; width: 100%">
-		<div class="pro-card">What our Pros say</div>
-		<div class="pro-card">What our Pros say</div>
-		<div class="pro-card">What our Pros say</div>
+	<div class="three-container" style="text-align: center; padding-top: 70px; padding-bottom: 70px; width: 100%">
+		<div style="grid-column: span 3; padding-bottom: 50px; font-size: 4rem; font-weight: 400">What our Pros say</div>
+		<div class="pro-card">
+			<div><img src="<?php echo base_url(); ?>res/images/iph1.png" alt="Search" style="display: block" /></div>
+			<div class="comment">“An amazing service”</div>
+			<div class="body">Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque sed egestas.</div>
+			<div class="from-name">John Carter</div>
+			<div class="from-desc">Automation Pro</div>
+		</div>
+		<div class="pro-card">
+			<div><img src="<?php echo base_url(); ?>res/images/iph1.png" alt="Search" style="display: block" /></div>
+			<div class="comment">“One of a kind service”</div>
+			<div class="body">Ultrices eros in cursus turpis massa tincidunt pellentesque sem nulla pharetra diam sit amet nisl suscipit adipis.</div>
+			<div class="from-name">Sophie Moore</div>
+			<div class="from-desc">Electrical Pro</div>
+		</div>
+		<div class="pro-card">
+			<div><img src="<?php echo base_url(); ?>res/images/iph1.png" alt="Search" style="display: block" /></div>
+			<div class="comment">“The best service”</div>
+			<div class="body">Convallis posuere morbi leo urna molestie at elementum eu facilisis sapien pellentesque habitant.</div>
+			<div class="from-name">Andy Smith</div>
+			<div class="from-desc">Flooring Pro</div>
+		</div>
 	</div>
-					<!-- </div> -->
+
+	<div class="six-container" style="text-align: left; padding-top: 70px; padding-bottom: 70px; width: 100%; row-gap: 30px">
+		<div style="grid-column: span 6; padding-bottom: 50px; font-size: 4rem; font-weight: 400">Service you may like</div>
+		<div class="services-btn">Lawn Care</div>
+		<div class="services-btn">Help Moving</div>
+		<div class="services-btn">Mounting</div>
+		<div class="services-btn">Electrician</div>
+		<div class="services-btn">Pool Maintenance</div>
+		<div class="services-btn">Roof Repair</div>
+
+		<div class="services-btn">Painting</div>
+		<div class="services-btn">House Cleaning</div>
+		<div class="services-btn">Renovation</div>
+		<div class="services-btn">Deep Cleaning</div>
+		<div class="services-btn">Landscaping</div>
+		<div class="services-btn">CCTV Installation</div>
+	</div>
+					
+	<?php
+		$this->load->view('components/newsletter');
+	?>
+<!-- </div> -->
 </div>
