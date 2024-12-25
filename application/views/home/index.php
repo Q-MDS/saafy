@@ -144,8 +144,8 @@
 		</div>
 	</div>
 
-	<div class="three-container" style="text-align: center; padding-top: 70px; padding-bottom: 70px; width: 100%">
-		<div style="grid-column: span 3; padding-bottom: 50px; font-size: 4rem; font-weight: 400">What our Pros say</div>
+	<div style="width: 100%; padding-top: 70px; padding-bottom: 50px; font-size: 4rem; font-weight: 400">What our Pros say</div>
+	<div class="three-container" style="text-align: center; padding-bottom: 70px; width: 100%">
 		<div class="pro-card">
 			<div><img src="<?php echo base_url(); ?>res/images/iph1.png" alt="Search" style="display: block" /></div>
 			<div class="comment">“An amazing service”</div>
@@ -169,8 +169,8 @@
 		</div>
 	</div>
 
-	<div class="six-container" style="text-align: left; padding-top: 70px; padding-bottom: 70px; width: 100%; row-gap: 30px">
-		<div style="grid-column: span 6; padding-bottom: 50px; font-size: 4rem; font-weight: 400">Service you may like</div>
+	<div style="width: 100%; padding-top: 70px; padding-bottom: 50px; font-size: 4rem; font-weight: 400">Services you may like</div>
+	<div class="six-container" style="text-align: left;  padding-bottom: 70px; width: 100%; row-gap: 30px">
 		<div class="services-btn">Lawn Care</div>
 		<div class="services-btn">Help Moving</div>
 		<div class="services-btn">Mounting</div>
@@ -186,8 +186,8 @@
 		<div class="services-btn">CCTV Installation</div>
 	</div>
 					
+<!-- </div> -->
+</div>
 	<?php
 		$this->load->view('components/newsletter');
 	?>
-<!-- </div> -->
-</div>

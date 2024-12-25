@@ -45,9 +45,9 @@
 	</div>
 
 	<div style="width: 100%;">
-		<div class="container">
+		<!-- <div class="container"> -->
 			<?php $this->load->view($main_content); ?>
-		</div>
+		<!-- </div> -->
 	</div>
 
 	<!-- <div style="width: 100%;"> -->
