@@ -188,6 +188,6 @@
 					
 <!-- </div> -->
 </div>
-	<?php
-		$this->load->view('components/newsletter');
-	?>
+<?php
+	$this->load->view('components/newsletter');
+?>

@@ -11,10 +11,10 @@ class Contact extends CI_Controller
 	public function index()
 	{
 		$data = array();
-		$data['title'] = 'Saafy: Contact';
-		$data['topbar'] = 'includes/topbar';
+		$data['title'] = 'Saafy: Contact Us';
+		$data['menu'] = 'includes/menus/basic';
+		$data['landing'] = 'contact/landing';
 		$data['main_content'] = 'contact/index';
-		$data['intro_type'] = 'Contact';
 
 		$this->load->view('includes/template', $data);
 	}

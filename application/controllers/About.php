@@ -12,9 +12,9 @@ class About extends CI_Controller
 	{
 		$data = array();
 		$data['title'] = 'Saafy: About';
-		$data['topbar'] = 'includes/topbar';
+		$data['menu'] = 'includes/menus/basic';
+		$data['landing'] = 'about/landing';
 		$data['main_content'] = 'about/index';
-		$data['intro_type'] = 'About';
 
 		$this->load->view('includes/template', $data);
 	}

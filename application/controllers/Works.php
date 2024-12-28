@@ -12,9 +12,9 @@ class Works extends CI_Controller
 	{
 		$data = array();
 		$data['title'] = 'Saafy: How it works';
-		$data['topbar'] = 'includes/topbar';
+		$data['menu'] = 'includes/menus/basic';
+		$data['landing'] = 'works/landing';
 		$data['main_content'] = 'works/index';
-		$data['intro_type'] = 'Works';
 
 		$this->load->view('includes/template', $data);
 	}
