@@ -18,12 +18,12 @@
 						<img src="<?php echo base_url(); ?>res/images/search_outline.svg" alt="Search" style="display: block" />
 					</div>
 					<div style="display: flex; align-items: center; flex: 1; height: 59px; background: #fff">
-						<input type="text" style="border: 0px; width: 100%" placeholder="Search for a professional?" />
+						<input type="text" id="search_topic" style="border: 0px; width: 100%" placeholder="Search for a professional?" />
 					</div>
 					<div style="display: flex; align-items: center; width: 150px; height: 59px; background: #fff">
-						<input type="text" style="border: 0px; width: 100%" placeholder="Location" />
+						<input type="text" id="search_location" style="border: 0px; width: 100%" placeholder="Location" />
 					</div>
-					<div style="display: flex; align-items: center; justify-content: center; width: 50px; height: 59px; background: #fff; border-radius: 0px 30px 30px 0px">
+					<div style="display: flex; align-items: center; justify-content: center; width: 50px; height: 59px; background: #fff; border-radius: 0px 30px 30px 0px; cursor: pointer;" onclick="SEARCH.setSearch()">
 						<img src="<?php echo base_url(); ?>res/images/search_full.svg" alt="Search" style="display: block" />
 					</div>
 				</div>

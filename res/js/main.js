@@ -10,7 +10,9 @@ function include(file)
     document.getElementsByTagName('head').item(0).appendChild(script); 
 }
 
+include(baseUrl + "res/js/router.js");
 include(baseUrl + "res/js/menu.js");
+include(baseUrl + "res/js/search.js");
 include(baseUrl + "res/js/nav.js");
 
 async function sendData(phpUrl, formData) 

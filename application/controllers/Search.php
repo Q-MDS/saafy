@@ -8,22 +8,21 @@ class Search extends CI_Controller
         parent::__construct();
     }
 
+	public function set_search()
+	{
+		$this->session->st_userdata('search_topic', $this->input->post('search_topic'));
+		$this->session->st_userdata('search_location', $this->input->post('search_location'));
+	}
+
 	public function index()
 	{
 		$data = array();
-		$data['title'] = 'Saafy: Search';
-		// $data['topbar'] = 'includes/topbar';
+		$data['title'] = 'Saafy: Search Results';
+		$data['menu'] = 'includes/menus/search';
+		$data['landing'] = 'search/landing';
 		$data['main_content'] = 'search/index';
 
 		$this->load->view('includes/template_search', $data);
 	}
 
-	public function view()
-	{
-		$data = array();
-		$data['title'] = 'Saafy: Search: View';
-		$data['main_content'] = 'search/view';
-
-		$this->load->view('includes/template_search', $data);
-	}
 }
