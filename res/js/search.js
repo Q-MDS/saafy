@@ -15,4 +15,18 @@ const SEARCH =
 			ROUTER.search();
 		});
     },
+
+	viewResult: function(id)
+	{
+
+		let formData = { "search_view_id": id };
+		
+        let phpUrl = baseUrl + "search/set_result";
+        
+        sendData(phpUrl, formData)
+        .then(result => 
+		{ 
+			ROUTER.search_view();
+		});
+	}
 }

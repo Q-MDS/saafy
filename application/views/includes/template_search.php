@@ -42,7 +42,9 @@
 		</div>
 		
 		<!-- <div class="container"> -->
+		<div style="width: 100%; background: #F6F9FC">
 			<?php $this->load->view($landing); ?>
+		</div>
 		<!-- </div> -->
 	</div>
 

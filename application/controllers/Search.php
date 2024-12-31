@@ -25,4 +25,20 @@ class Search extends CI_Controller
 		$this->load->view('includes/template_search', $data);
 	}
 
+	public function set_view()
+	{
+		$this->session->st_userdata('search_view_id', $this->input->post('search_view_id'));
+	}
+
+	public function view()
+	{
+		$data = array();
+		$data['title'] = 'Saafy: View';
+		$data['menu'] = 'includes/menus/search';
+		$data['landing'] = 'search/view_result/landing';
+		$data['main_content'] = 'search/view_result/index';
+
+		$this->load->view('includes/template_search', $data);
+	}
+
 }
