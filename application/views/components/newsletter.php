@@ -3,7 +3,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-image: url('./res/images/newsletter_bg.jpg');
+		background-image: url('<?php echo base_url(); ?>./res/images/newsletter_bg.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
