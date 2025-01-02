@@ -32,37 +32,16 @@
 </head>
 
 <body>
-	<!-- Manu and landing page
+	<!-- Page container
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<div class="search-container">
-		<div style="width: 100%;">
-			<div class="container">
-				<?php $this->load->view($menu); ?>
-			</div>
-		</div>
-		
-		<!-- <div class="container"> -->
-		<div style="width: 100%; background: #F6F9FC">
-			<?php $this->load->view($landing); ?>
-		</div>
-		<!-- </div> -->
-	</div>
-
-	<!-- Main content
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<div style="width: 100%; background: #F6F9FC">
+	<div style="width: 100vw; height: 100vh; background-image: url('<?php echo base_url(); ?>res/images/form_template_bg.jpg');background-repeat: no-repeat; background-size: cover; background-position: top|left;">
+	
+		<!-- Main content
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
 			<?php $this->load->view($main_content); ?>
-	</div>
+		</div>
 
-	<!-- Form overlay
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<div id="form_overlay"></div>
-	<!-- END: Form overlay -->
-
-	<!-- Footer
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<div class="footer-container">
-		<?php $this->load->view('includes/footer'); ?>
 	</div>
 </body>
 </html>

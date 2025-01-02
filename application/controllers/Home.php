@@ -17,6 +17,7 @@ class Home extends CI_Controller
 		$data['menu'] = 'includes/menus/basic';
 		$data['landing'] = 'home/landing';
 		$data['main_content'] = 'home/index';
+		
 		$this->load->view('includes/template', $data);
 	}
 
