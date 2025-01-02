@@ -23,15 +23,15 @@
 <div class="responsive-div">
     <div class="flex-col" style="width: 100%; padding: 60px 40px;">
 		<div style="justify-items: center; width: 100%;"><img src="<?php echo base_url(); ?>res/images/logo_login.svg" alt="Customer login" style="display: block" /></div>
-		<div class="fs22 fw400">Email</div>
-		<div><input type="text" style="width: 100%" /></div>
-		<div class="fs22 fw400">Password</div>
-		<div><input type="text" style="width: 100%" /></div>
-		<div class="flex-row" style="justify-content: space-between; margin-top: 20px;">
+		<div class="fs20 fw400" style="padding-top: 50px;">Email</div>
+		<div><input type="text" style="width: 100%" placeholder="Email" /></div>
+		<div class="fs20 fw400" style="padding-top: 25px;">Password</div>
+		<div><input type="text" style="width: 100%" placeholder="Password" /></div>
+		<div class="flex-row" style="justify-content: space-between; margin-top: 30px;">
 			<div><input type="checkbox"/> Remember me</div>
-			<div><a href="#">Forgot password?</a></div>
+			<div style="cursor: pointer" onclick="ROUTER.forgot_customer()">Forgot password?</div>
 		</div>
-		<div class="app-button">Log in</div>
-		<div>Don’t have an account? Sign up</div>
+		<div class="app-button" style="margin-top: 25px;">Log in</div>
+		<div style="margin-top: 25px; text-align: center">Don’t have an account? <u>Sign up</u></div>
 	</div>
 </div>

@@ -16,4 +16,22 @@ class Login_customer extends CI_Controller
 		
 		$this->load->view('includes/template_form', $data);
 	}
+
+	public function forgot()
+	{
+		$data = array();
+		$data['title'] = 'Login';
+		$data['main_content'] = 'login/customer/forgot';
+		
+		$this->load->view('includes/template_form', $data);
+	}
+
+	public function forgot_confirm()
+	{
+		$data = array();
+		$data['title'] = 'Login';
+		$data['main_content'] = 'login/customer/forgot_confirm';
+		
+		$this->load->view('includes/template_form', $data);
+	}
 }
