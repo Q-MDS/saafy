@@ -17,6 +17,13 @@ class Login_customer extends CI_Controller
 		$this->load->view('includes/template_form', $data);
 	}
 
+	public function validate()
+	{
+		$this->session->set_userdata('authenticated', true);
+		
+		redirect('home');
+	}
+
 	public function forgot()
 	{
 		$data = array();

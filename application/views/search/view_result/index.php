@@ -193,7 +193,6 @@
 							<div style="font-size: 1.6rem; cursor: pointer;" onclick="SIGNUP_CUSTOMER.get_popup();">Write Review</div>
 						</div>
 						<div style="font-size: 1.6rem; cursor: pointer; margin-left: 10px" onclick="CUSTOMER.get_write_review();">Write Review*</div>
-						<div style="font-size: 1.6rem; cursor: pointer; margin-left: 10px" onclick="ROUTER.customer_reviews();">All*</div>
 					</div>
 				</div>
 			</div>

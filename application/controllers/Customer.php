@@ -43,4 +43,15 @@ class Customer extends CI_Controller
 
 		$this->load->view('includes/template_search', $data);
 	}
+
+	public function account()
+	{
+		$data = array();
+		$data['title'] = 'Saafy: Account';
+		$data['menu'] = 'includes/menus/basic_active';
+		$data['landing'] = 'customer/account/landing';
+		$data['main_content'] = 'customer/account/index';
+
+		$this->load->view('includes/template_search', $data);
+	}
 }

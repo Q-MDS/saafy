@@ -1,5 +1,16 @@
 const ROUTER = 
 {
+	login: function(type)
+	{
+		if (type == 0)
+		{
+			window.location.assign(baseUrl + "login_customer/validate");
+		}
+		else 
+		{
+			window.location.assign(baseUrl + "login_pro/validate");
+		}
+	},
 	search: function()
 	{
 		window.location.assign(baseUrl + "search");
@@ -39,5 +50,9 @@ const ROUTER =
 	customer_reviews: function()
 	{
 		window.location.assign(baseUrl + "customer/reviews");
+	},
+	customer_account: function()
+	{
+		window.location.assign(baseUrl + "customer/account");
 	}
 }

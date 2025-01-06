@@ -21,6 +21,14 @@
 	/* height: 70px; */
 }
 
+.menu-active-container {
+	display: grid;
+	grid-template-columns: minmax(200px, 1fr) repeat(3, 140px) auto; /* 4 columns by default */
+	width: 100%;
+	align-items: center;
+	/* height: 70px; */
+}
+
 .menu-item {
 	/* background-color: #e5e5e5; */
 	padding: 20px;

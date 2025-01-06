@@ -12,9 +12,17 @@ class Home extends CI_Controller
 
 	public function index()
 	{
+		$authenticated = $this->session->userdata('authenticated');
 		$data = array();
 		$data['title'] = 'Home page';
-		$data['menu'] = 'includes/menus/basic';
+		if ($authenticated) 
+		{
+			$data['menu'] = 'includes/menus/basic_active';
+		} 
+		else {
+			$data['menu'] = 'includes/menus/basic';
+		}
+		// $data['menu'] = 'includes/menus/basic';
 		$data['landing'] = 'home/landing';
 		$data['main_content'] = 'home/index';
 		

@@ -32,7 +32,7 @@
 			<div style="flex: 1"><label for="remember" style="font-weight: normal; padding: 0px; margin: 0px;">I agree to Privacy Policy</label></div>
 			<div style="cursor: pointer" onclick="ROUTER.forgot_customer()">Forgot password?</div>
 		</div>
-		<div class="app-button" style="margin-top: 25px;">Log in</div>
+		<div class="app-button" style="margin-top: 25px;" onclick="ROUTER.login(0)">Log in</div>
 		<div style="margin-top: 25px; text-align: center">Don’t have an account? <span style="font-style: italic; text-decoration: underline; cursor: pointer" onclick="ROUTER.customer_signup()">Sign up</span></div>
 	</div>
 </div>
