@@ -16,4 +16,22 @@ class Signup_customer extends CI_Controller
 
         echo $this->load->view('signup_customer/popup', $data, TRUE);
 	}
+
+	public function index()
+	{
+		$data = array();
+		$data['title'] = 'Signup';
+		$data['main_content'] = 'signup_customer/index';
+		
+		$this->load->view('includes/template_form', $data);
+	}
+
+	public function confirm()
+	{
+		$data = array();
+		$data['title'] = 'Signup';
+		$data['main_content'] = 'signup_customer/confirm';
+		
+		$this->load->view('includes/template_form', $data);
+	}
 }

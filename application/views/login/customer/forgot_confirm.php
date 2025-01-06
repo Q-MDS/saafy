@@ -6,7 +6,7 @@
 		<div class="fs20 fw400" style="padding-top: 45px; text-align: center">If there’s a <span class="inline-logo"></span> account associated with name@mail.com you’ll get a link in your inbox to reset your password.</div>
 		<div class="fs20 fw400" style="padding-top: 20px; text-align: center">If you don’t get the link, check your spam folder or re-enter your email address.</div>
 
-		<div class="fs22 fw400" style="padding-top: 45px; text-align: center">Still need help? <u>Contact us.</u></div>
+		<div class="fs20 fw400" style="padding-top: 45px; text-align: center">Still need help? <u>Contact us.</u></div>
 
 	</div>
 </div>

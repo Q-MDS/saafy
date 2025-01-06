@@ -92,23 +92,79 @@
 	}
 }
 
-/* Threecolumn container */
+/* Three column container */
 .three-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 30px;
 	width: 100%;
 	align-items: flex-start;
-	/* height: 70px; */
+	box-sizing: border-box;
 }
 @media (max-width: 945px) {
 	.three-container {
-		grid-template-columns: 1fr; /* 2 columns for medium screens */
+		grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
+		row-gap: 24px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 
 @media (max-width: 480px) {
 	.three-container {
+		grid-template-columns: 1fr; /* 1 column for small screens */
+		row-gap: 24px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+/* Three column container narrow */
+.three-narrow-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 30px;
+	row-gap: 25px;
+	width: 100%;
+	align-items: flex-start;
+	box-sizing: border-box;
+	padding-left: 125px;
+	padding-right: 125px;
+}
+@media (max-width: 945px) {
+	.three-narrow-container {
+		grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
+		row-gap: 24px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+@media (max-width: 480px) {
+	.three-narrow-container {
+		grid-template-columns: 1fr; /* 1 column for small screens */
+		row-gap: 24px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+/* Four column container */
+.four-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 30px;
+	width: 100%;
+	align-items: flex-start;
+}
+@media (max-width: 945px) {
+	.four-container {
+		grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+	}
+}
+
+@media (max-width: 480px) {
+	.four-container {
 		grid-template-columns: 1fr; /* 1 column for small screens */
 	}
 }
@@ -175,6 +231,33 @@
 	.one-all-container {
 		row-gap: 24px;
 		grid-template-columns: 1fr; /* 1 column for small screens */
+	}
+}
+
+/* One column container narrow */
+.one-narrow-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 25px;
+	width: 100%;
+	align-items: flex-start;
+	box-sizing: border-box;
+	padding-left: 125px;
+	padding-right: 125px;
+}
+@media (max-width: 945px) {
+	.one-narrow-container {
+		row-gap: 24px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+@media (max-width: 480px) {
+	.one-narrow-container {
+		row-gap: 24px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 
@@ -274,6 +357,17 @@
 	border-radius: 3px;
 	cursor: pointer;
 }
+.alt-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 47px;
+	padding: 0 30px;
+	background-color: #E0DEFF;
+	color: #635BFF;
+	border-radius: 3px;
+	cursor: pointer;
+}
 .org-button {
 	display: flex;
 	align-items: center;
@@ -324,12 +418,72 @@
 	
 }
 
+/* Bookmark card
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bookmark-card {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	padding: 15px;
+}
+.bookmark-card .title {
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 10px 0px;
+}
+.bookmark-card .category {
+	display: flex;
+	align-items: center;
+	font-size: 1.6rem;
+}
+.bookmark-card .sub-title {
+	font-size: 1.6rem;
+	font-weight: 700;
+	padding: 10px 0px;
+}
+.bookmark-card .description {
+	font-size: 1.4rem;
+}
+
+/* Review card
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.review-card {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	padding: 15px;
+}
+.review-card .title {
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 0px 0px;
+}
+.review-card .date {
+	font-size: 1.4rem;
+	color: #1F354199;
+}
+.review-card .description {
+	font-size: 1.4rem;
+	color: #2b2b2b;
+	padding-right: 50px;
+}
+
 /* Responsive div for form pages
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .responsive-div {
 	display: flex;
 	width: 100%;
-	max-width: 650px;
+	max-width: 750px;
 	margin: 0 auto;
 	background: #fff;
 	border-radius: 20px;
@@ -387,6 +541,12 @@
 }
 .fs25 {
 	font-size: 2.5rem;
+}
+.fs30 {
+	font-size: 3.0rem;
+}
+.fs35 {
+	font-size: 3.5rem;
 }
 .fs40 {
 	font-size: 4rem;

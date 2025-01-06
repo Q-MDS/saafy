@@ -38,7 +38,7 @@
 			<div class="search-view-container">
 				<div>&nbsp;</div>
 				<div style="position: relative">
-					<img src="<?php echo base_url(); ?>res/images/search_view_placeholder.jpg" alt="Company main picture" style="display: block; max-width: 100%" />
+					<img src="<?php echo base_url(); ?>res/images/search_view_placeholder.jpg" alt="Company main picture" style="display: block; width: 100%" />
 					<div style="position: absolute; top: 17px; right: 17px">
 						<div id="show_verified" class="verified">
 							<div><img src="<?php echo base_url(); ?>res/images/verified_icon.svg" alt="Verified" style="display: block" /></div>

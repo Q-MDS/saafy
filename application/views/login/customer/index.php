@@ -27,11 +27,12 @@
 		<div><input type="text" style="width: 100%" placeholder="Email" /></div>
 		<div class="fs20 fw400" style="padding-top: 25px;">Password</div>
 		<div><input type="text" style="width: 100%" placeholder="Password" /></div>
-		<div class="flex-row" style="justify-content: space-between; margin-top: 30px;">
-			<div><input type="checkbox"/> Remember me</div>
+		<div class="flex-row" style=" margin-top: 30px;">
+			<div><input type="checkbox" id="remember"/></div>
+			<div style="flex: 1"><label for="remember" style="font-weight: normal; padding: 0px; margin: 0px;">I agree to Privacy Policy</label></div>
 			<div style="cursor: pointer" onclick="ROUTER.forgot_customer()">Forgot password?</div>
 		</div>
 		<div class="app-button" style="margin-top: 25px;">Log in</div>
-		<div style="margin-top: 25px; text-align: center">Don’t have an account? <u>Sign up</u></div>
+		<div style="margin-top: 25px; text-align: center">Don’t have an account? <span style="font-style: italic; text-decoration: underline; cursor: pointer" onclick="ROUTER.customer_signup()">Sign up</span></div>
 	</div>
 </div>

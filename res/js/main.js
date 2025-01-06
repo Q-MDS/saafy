@@ -13,6 +13,7 @@ function include(file)
 include(baseUrl + "res/js/router.js");
 include(baseUrl + "res/js/menu.js");
 include(baseUrl + "res/js/search.js");
+include(baseUrl + "res/js/customer.js");
 include(baseUrl + "res/js/signup_customer.js");
 include(baseUrl + "res/js/nav.js");
 

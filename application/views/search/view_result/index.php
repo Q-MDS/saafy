@@ -100,7 +100,7 @@
 			<div>&nbsp;</div>
 			<div class="search-view-detail-desc-container">
 				<div style="max-width: 650px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem sem, rutrum quis elit vel, mattis efficitur lorem. Etiam faucibus, nibh ac finibus eleifend</div>
-				<div style="display: flex; align-items: center; justify-content: flex-end; column-gap: 10px;">
+				<div style="display: flex; align-items: center; justify-content: flex-end; column-gap: 10px; cursor: pointer" onclick="CUSTOMER.get_report_business()">
 					<div><img src="<?php echo base_url(); ?>res/images/icon_report.svg" alt="Report" style="display: block" /></div>
 					<div>Report</div>
 				</div>
@@ -192,6 +192,8 @@
 							<div><img src="<?php echo base_url(); ?>res/images/pencil.svg" alt="Write review" style="display: block" /></div>
 							<div style="font-size: 1.6rem; cursor: pointer;" onclick="SIGNUP_CUSTOMER.get_popup();">Write Review</div>
 						</div>
+						<div style="font-size: 1.6rem; cursor: pointer; margin-left: 10px" onclick="CUSTOMER.get_write_review();">Write Review*</div>
+						<div style="font-size: 1.6rem; cursor: pointer; margin-left: 10px" onclick="ROUTER.customer_reviews();">All*</div>
 					</div>
 				</div>
 			</div>

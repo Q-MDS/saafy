@@ -42,7 +42,7 @@
 	}
 </style>
 <div class="search-bar-container">
-	<div><img src="<?php echo base_url(); ?>res/images/logo_top.svg" alt="Saaafy logo"></div>
+	<div onclick="MENU.home()"><img src="<?php echo base_url(); ?>res/images/logo_top.svg" alt="Saaafy logo"></div>
 	<div class="search-bar">
 		<div style="display: flex; align-items: center; justify-content: center; width: 50px; height: 59px; background: #fff; border-radius: 30px 0px 0px 30px; border: 1px solid #EAEAEA; border-right: 0px;">
 			<img src="<?php echo base_url(); ?>res/images/search_outline.svg" alt="Search" style="display: block" />
